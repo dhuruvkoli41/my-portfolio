@@ -1,0 +1,956 @@
+     * {
+         margin: 0;
+         padding: 0;
+     }
+
+     body {
+         background-color: rgb(7, 37, 102);
+         color: white;
+         font-family: cursive;
+     }
+
+     nav {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         height: 70px;
+         background-color: rgb(13, 12, 82);
+     }
+
+     .page {
+         display: none;
+     }
+     #home{
+        display: block;
+     }
+     #home:target,
+     #About:target,
+     #services:target,
+     #projectes:target,
+     #contact:target {
+         display: block;
+     }
+
+
+     nav ul {
+         display: flex;
+         justify-content: center;
+     }
+
+     nav ul li {
+         list-style: none;
+         margin: 0 23px;
+     }
+
+     nav ul li a {
+         text-decoration: none;
+         color: white;
+     }
+
+     nav ul li a:hover {
+         color: rgb(21, 143, 122);
+         font-size: 1.02rem;
+     }
+
+     main hr {
+         border: 0;
+         background-color: darkcyan;
+         height: 2px;
+         margin: 40px 84px;
+     }
+
+     .left {
+         font-size: 1.5rem;
+     }
+
+     .Cyber {
+         border-radius: 20px;
+         box-shadow: 10px 10px 9px rgb(57, 153, 137);
+     }
+
+     .firstsection {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         margin: 110px 0;
+
+     }
+
+
+     .firstsection>div {
+         width: 30%;
+     }
+
+
+     .leftsection {
+         margin: 30px;
+         font-size: 3rem;
+     }
+
+     .leftsection .btn {
+         padding: 12px;
+         background-color: rgb(32, 107, 101);
+         border: 2px solid white;
+         color: white;
+         border-radius: 20px;
+     }
+
+     .leftsection .btn:hover {
+         transition-duration: 250ms;
+         background-color: rgb(11, 68, 63);
+     }
+
+     .leftsection-about {
+         margin: 10px;
+         font-size: 1.8rem;
+     }
+
+     .leftsection-about .btn {
+         margin: 30px 0;
+         padding: 12px;
+         background-color: rgb(32, 107, 101);
+         border: 2px solid white;
+         color: white;
+         border-radius: 20px;
+     }
+
+     .leftsection-about .btn:hover {
+         background-color: rgb(11, 68, 63);
+     }
+
+
+     .rightsection img {
+         width: 80%;
+         margin: 50px 0;
+     }
+
+     .rightsection-about img {
+         width: 100%;
+         height: 300px;
+         margin: 50px 0;
+     }
+
+     .purple {
+         color: rgba(9, 190, 151, 0.644);
+     }
+
+
+
+     #element {
+         color: rgba(86, 173, 144, 0.644);
+     }
+
+     .secondsection {
+         max-width: 80vw;
+         margin: auto;
+         height: 95vh;
+     }
+
+     .secondsection .dec {
+         font-size: 20px;
+         margin: 0px 30px;
+         text-shadow: 5px 5px 5px black;
+     }
+
+     .secondsection h1 {
+         text-shadow: 9px 7px 5px black;
+         font-size: 2.6rem;
+         margin: 30px 0;
+     }
+
+     .secondsection li {
+         max-width: 80vw;
+         margin: auto;
+         font-size: 23px;
+         color: rgb(155, 187, 223);
+         text-shadow: 5px 5px 3px black;
+     }
+
+
+     /* .secondsection .box {
+            background-color: white;
+            width: 80vw;
+            height: 1px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: rgb(255, 255, 255);
+            margin: 0 100px;
+        } */
+
+     .image-top {
+         width: 23px;
+         position: relative;
+         top: -32px;
+         left: -9px;
+     }
+
+     .vertical-title {
+         position: relative;
+         top: 70px;
+         width: 150px;
+     }
+
+     .vertical-desc {
+         position: relative;
+         top: 80px;
+         width: 150px;
+         color: grey;
+         font-size: 9px;
+     }
+
+     footer {
+         background-color: rgb(5, 20, 16);
+     }
+
+     .footer {
+         padding: 33px 172px;
+         display: flex;
+         justify-content: space-evenly;
+     }
+
+     .footer ul {
+         list-style: none;
+     }
+
+     .footer>div {
+         width: 220px;
+     }
+
+     footer .footer-rights {
+         text-align: center;
+         color: grey;
+         padding: 12px 0;
+     }
+
+     .sec {
+         display: flex;
+         border: 2px solid grey;
+         padding: 15px;
+         width: 38%;
+         font-size: 20px;
+         border-radius: 30px;
+     }
+
+     .sr-sec {
+         display: flex;
+         border: 2px solid grey;
+         padding: 15px;
+         margin-top: 20px;
+         width: 58%;
+         font-size: 20px;
+         border-radius: 30px;
+     }
+
+     .grad {
+         display: flex;
+         border: 2px solid grey;
+         padding: 15px;
+         margin-top: 20px;
+         width: 47%;
+         font-size: 20px;
+         border-radius: 30px;
+     }
+
+     .desc {
+         font-size: 16px;
+         margin: 5px 7px;
+         color: rgb(175, 173, 173);
+     }
+
+     .edu {
+         margin: 10px 10px;
+         padding: 30px;
+
+     }
+
+     h2 {
+         margin-bottom: 40px;
+         font-size: 32px;
+         color: rgb(47, 129, 109);
+     }
+
+     summary {
+         cursor: pointer;
+         font-size: 23px;
+         color: white;
+     }
+
+
+
+     .skills {
+         max-width: 385px;
+         margin-left: 0px;
+     }
+
+     .skl {
+         color: rgb(126, 248, 189);
+         margin: 30px 45px;
+         font-size: 18px;
+         border: 2px solid grey;
+         padding: 15px;
+         background-color: rgb(22, 92, 114);
+         max-width: 300px;
+         border-radius: 25px;
+     }
+
+     .skl:hover {
+         box-shadow: 5px 5px 3px black;
+         padding: 16px;
+         transition-duration: 200ms;
+         background-color: rgb(26, 57, 92);
+
+     }
+
+
+
+     h5 {
+         font-size: 35px;
+         margin: 30px;
+         color: rgb(50, 119, 96);
+         text-shadow: 5px 5px 5px black;
+     }
+
+     .achiv ul {
+         margin: 0 45px;
+         font-size: 20px;
+     }
+
+     .achiv li {
+         margin: 30px 30px;
+     }
+
+     .cert {
+         margin-left: 180px;
+     }
+
+     .cert a {
+         text-decoration: none;
+         color: white;
+         font-size: 20px;
+         padding: 15px;
+         display: flex;
+         width: fit-content;
+         border: 2px solid gray;
+         background-color: rgb(30, 83, 99);
+         border-radius: 50px;
+     }
+
+     .cert a:hover {
+         text-decoration: none;
+         color: white;
+         font-size: 21px;
+         padding: 15px;
+         background-color: rgb(26, 57, 92);
+         box-shadow: 5px 5px 3px black;
+         border-radius: 50px;
+         transition-duration: 200ms;
+     }
+
+     .cert div {
+
+         margin-left: 40px;
+         margin-bottom: 35px;
+
+     }
+
+     .cer {
+         position: relative;
+         font-size: 20px;
+         text-decoration: underline;
+         color: rgb(55, 175, 135);
+         top: 20px;
+     }
+
+     .flx {
+         display: flex;
+     }
+
+     .proj {
+         margin: 30px 40px;
+         font-size: 24px;
+     }
+
+     .proj div {
+         margin: 45px;
+
+     }
+
+     .proj a {
+         border: 2px solid grey;
+         border-radius: 20px;
+         padding: 10px;
+         text-decoration: none;
+         color: white;
+
+     }
+
+     .proj a:hover {
+         transition-duration: 200ms;
+         text-decoration: none;
+         color: rgb(19, 112, 84);
+     }
+
+     .proj-head {
+         margin: 0 50px;
+         font-style: italic;
+         font-size: 45px;
+         color: rgb(34, 133, 136);
+         text-shadow: 5px 5px 3px black;
+     }
+
+     .proj-s {
+         margin-bottom: 20px;
+     }
+
+     .page h5 {
+         text-shadow: 5px 5px 3px black;
+     }
+
+     .ser {
+         margin: 30px 70px;
+         font-size: 26px;
+         text-shadow: 3px 3px 3px black;
+         color: cadetblue;
+         font-style: italic;
+     }
+
+     .serv {
+         margin: 60px 0;
+     }
+
+     .serv ul {
+         display: flex;
+         margin-left: 20px;
+
+     }
+
+     .serv li {
+         border: 2px solid grey;
+         border-radius: 20px;
+         padding: 10px;
+         font-size: 19px;
+         margin: 30px;
+         box-shadow: 3px 3px 10px black;
+
+     }
+
+     .serv li:hover {
+         transition-duration: 200ms;
+         border: 2px solid rgb(172, 171, 171);
+         border-radius: 20px;
+         background-color: rgb(31, 59, 112);
+         padding: 10px;
+         font-size: 19px;
+         box-shadow: 15px 15px 5px black;
+     }
+
+     .serv li h3 {
+         border-radius: 20px;
+         font-size: 25px;
+         text-shadow: 5px 5px 5px black;
+         padding: 10px;
+         color: rgb(75, 148, 120);
+     }
+
+     .cont {
+         /* display: flex; */
+         margin: 100px 25px;
+     }
+
+     .cont div {
+         display: flex;
+         margin: 70px;
+     }
+
+     .cont span {
+         color: rgb(255, 255, 255);
+         border: 2px solid white;
+         border-radius: 30px;
+         padding: 20px;
+         font-size: 25px;
+         margin: 70px;
+         box-shadow: 3px 3px 5px black;
+         background-color: rgb(6, 38, 80);
+     }
+
+     .cont a {
+         text-decoration: none;
+     }
+
+     .cont span:hover {
+         color: rgb(255, 255, 255);
+         border: 2px solid rgb(255, 255, 255);
+         border-radius: 30px;
+         padding: 23px;
+         font-size: 25px;
+         transition-duration: 200ms;
+         box-shadow: 10px 10px 5px black;
+         background-color: rgb(35, 72, 141);
+     }
+
+     footer h3 {
+         margin-right: 130px;
+         margin-top: 20px;
+     }
+
+     .proj {
+         display: flex;
+     }
+
+     .fx1 img {
+         height: 290px;
+         box-shadow: 10px 10px 10px rgb(19, 67, 155);
+         width: 100%;
+         border: 9px solid rgb(8, 119, 119);
+         border-radius: 30px;
+     }
+
+     footer li {
+         color: white;
+
+     }
+
+     footer a {
+         width: fit-content;
+         text-decoration: none;
+     }
+
+     footer li:hover {
+         color: blueviolet;
+     }
+
+     .btn a {
+         color: white;
+     }
+
+     @media screen and (max-width:800px) {
+         nav ul li {
+             list-style: none;
+             margin: 0 3px;
+             background-color: rgb(22, 45, 109);
+             border-radius: 10px;
+             padding: 1px;
+             font-size: 10px;
+         }
+
+         nav ul li a:hover {
+             color: rgb(21, 143, 122);
+             font-size: 0.65rem;
+             transition-duration: 200ms;
+         }
+
+         .left {
+             font-size: 12px;
+             margin: 9px;
+         }
+
+         .right {
+             font-size: 10px;
+         }
+
+         .firstsection {
+             margin: 10px;
+         }
+
+         .leftsection {
+             font-size: 20px;
+             margin: 10px;
+         }
+
+         .leftsection .buttons {
+             margin: 14px 0;
+             width: 500px;
+         }
+
+         .leftsection .btn {
+             margin: 5px 2px;
+         }
+
+         .rightsection {
+             max-width: 200px;
+         }
+
+         .secondsection h1 {
+             font-size: 30px;
+         }
+
+         .secondsection .dec {
+             font-size: 17px;
+         }
+
+         .secondsection li {
+             font-size: 15px;
+         }
+
+         .secondsection {
+             margin-bottom: 250px;
+         }
+
+         footer {
+             margin-top: 30px;
+
+         }
+
+         footer h3 {
+             margin-right: 10px;
+             margin-top: 10px;
+             font-size: 10px;
+         }
+
+         footer {
+             background-color: rgb(5, 20, 16);
+         }
+
+         .footer {
+             padding: 23px 22px;
+             display: flex;
+             justify-content: space-evenly;
+         }
+
+         .footer ul {
+             list-style: none;
+             margin: 0 3px;
+             font-size: 10px;
+         }
+
+         .footer li {
+             list-style: none;
+             margin: 7px 0px;
+             text-align: center;
+             background-color: rgb(5, 46, 48);
+             border-radius: 20px;
+             font-size: 10px;
+             padding: 2px;
+         }
+
+         .footer>div {
+             width: 110px;
+         }
+
+         footer .footer-rights {
+             text-align: center;
+             color: grey;
+             padding: 12px 0;
+         }
+
+         .objective img {
+             width: 100%;
+             margin: 10px 0;
+             height: 140px;
+         }
+
+         .objective h5 {
+             font-size: 30px;
+         }
+
+         .objective div {
+             font-size: 18px;
+         }
+
+         .edu h5 {
+             font-size: 23px;
+         }
+
+         .edu div {
+             font-size: 13px;
+         }
+
+         .flx {
+             display: block;
+         }
+
+         .cert {
+             margin: 30px 0;
+         }
+
+         .sec {
+             display: flex;
+             border: 2px solid grey;
+             padding: 15px;
+             width: 68%;
+             font-size: 20px;
+             border-radius: 30px;
+         }
+
+         .sr-sec {
+             display: flex;
+             border: 2px solid grey;
+             padding: 15px;
+             margin-top: 20px;
+             width: 78%;
+             font-size: 20px;
+             border-radius: 30px;
+         }
+
+         .grad {
+             display: flex;
+             border: 2px solid grey;
+             padding: 15px;
+             margin-top: 20px;
+             width: 87%;
+             font-size: 20px;
+             border-radius: 30px;
+         }
+
+         .desc {
+             font-size: 16px;
+             margin: 5px 7px;
+             color: rgb(175, 173, 173);
+         }
+
+         .edu {
+             margin: 9px;
+             padding: 10px;
+         }
+
+         h5 li {
+             font-size: 30px;
+         }
+
+         .cer {
+             font-size: 17px;
+         }
+
+         .skills summary {
+             font-size: 15px;
+             width: fit-content;
+         }
+
+         .skills ul {
+             font-size: 14px;
+             color: rgb(3, 15, 15);
+             margin: 10px 0;
+         }
+
+         .cert a {
+             text-decoration: none;
+             color: white;
+             font-size: 15px;
+             display: flex;
+             padding: 15px;
+             border-radius: 50px;
+         }
+
+         .cert li {
+             max-width: 200px;
+         }
+
+         div .c1 {
+             margin: 35px 10px;
+         }
+
+         div .c2 {
+             margin: 35px 10px;
+         }
+
+         div .c3 {
+             margin: 35px 10px;
+             max-width: 300px;
+         }
+
+         .c3 a {
+             max-width: 300px;
+         }
+
+         div .c4 {
+             margin: 35px 10px;
+         }
+
+         div .c5 {
+             margin: 35px 10px;
+         }
+
+         div .c6 {
+             margin: 35px 10px;
+         }
+
+         .cert a:hover {
+             text-decoration: none;
+             color: white;
+             font-size: 15.2px;
+             padding: 15px;
+             background-color: rgb(26, 57, 92);
+             box-shadow: 5px 5px 3px black;
+             border-radius: 50px;
+             transition-duration: 200ms;
+         }
+
+         .achiv ul {
+             margin: 45px 0;
+             font-size: 16px;
+         }
+
+         h5 {
+             margin: 20px 0;
+         }
+
+         .achiv li {
+             margin-left: 24px;
+             margin-right: 5px;
+         }
+
+         .proj-head li {
+             font-size: 40px;
+         }
+
+         .proj {
+             margin: 10px 0px;
+             font-size: 18px;
+         }
+
+         .proj div {
+             margin: 6px;
+         }
+
+         .fx1 {
+             display: none;
+         }
+
+         .proj a {
+             display: flex;
+             border: 2px solid grey;
+             border-radius: 20px;
+             padding: 10px;
+             text-decoration: none;
+             color: white;
+
+         }
+
+         .proj a:hover {
+             transition-duration: 200ms;
+             text-decoration: none;
+             color: rgb(19, 112, 84);
+         }
+
+         .proj-head {
+             margin: 10px 0px;
+             font-style: italic;
+             /* font-size: 25px; */
+             color: rgb(34, 133, 136);
+             text-shadow: 5px 5px 3px black;
+         }
+
+         .proj-s {
+             margin-bottom: 20px;
+             font-size: 20px;
+         }
+
+         .page h5 {
+             text-shadow: 5px 5px 3px black;
+         }
+
+         .ser {
+             margin: 20px 5px;
+             font-size: 22px;
+             text-shadow: 3px 3px 3px black;
+             color: cadetblue;
+             font-style: italic;
+         }
+
+         .serv {
+             margin: 30px 0;
+         }
+
+         .serv ul {
+             display: block;
+             margin-left: 20px;
+
+         }
+
+         .serv li {
+             border: 2px solid grey;
+             border-radius: 20px;
+             padding: 10px;
+             font-size: 19px;
+             margin: 30px;
+             box-shadow: 3px 3px 10px black;
+
+         }
+
+         .serv li:hover {
+             transition-duration: 200ms;
+             border: 2px solid rgb(172, 171, 171);
+             border-radius: 20px;
+             background-color: rgb(31, 59, 112);
+             padding: 10px;
+             font-size: 19px;
+             box-shadow: 15px 15px 5px black;
+         }
+
+         .serv li:active {
+             transition-duration: 200ms;
+             border: 2px solid rgb(172, 171, 171);
+             border-radius: 20px;
+             background-color: rgb(31, 59, 112);
+             padding: 10px;
+             font-size: 19px;
+             box-shadow: 15px 15px 5px black;
+         }
+
+         .serv li h3 {
+             border-radius: 20px;
+             font-size: 25px;
+             text-shadow: 5px 5px 5px black;
+             padding: 10px;
+             color: rgb(75, 148, 120);
+         }
+
+         .cont {
+             display: block;
+             margin: 2px 0px;
+         }
+
+         .cont div {
+             display: block;
+             margin: 2px 0;
+             max-width: 300px;
+         }
+
+         .cont span {
+             color: rgb(255, 255, 255);
+             border: 2px solid white;
+             border-radius: 30px;
+             padding: 20px;
+             font-size: 17px;
+             display: flex;
+             box-shadow: 3px 3px 5px black;
+             background-color: rgb(6, 38, 80);
+         }
+
+         .cont a {
+             text-decoration: none;
+             margin: 9px;
+         }
+
+         .cont span:hover {
+             color: rgb(255, 255, 255);
+             border: 2px solid rgb(255, 255, 255);
+             border-radius: 30px;
+             padding: 23px;
+             font-size: 18px;
+             transition-duration: 200ms;
+             box-shadow: 10px 10px 5px black;
+             background-color: rgb(2, 22, 58);
+         }
+
+         .cont .eml {
+             margin: 10px;
+         }
+
+         .cont .insta {
+             margin: 10px;
+         }
+
+         .cont .git {
+             margin: 10px;
+         }
+
+         .cont .x {
+             margin: 10px;
+         }
+     }
